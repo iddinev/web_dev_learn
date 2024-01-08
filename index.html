@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="assets/styles/style.css" rel="stylesheet" />
+    <title>My test page</title>
+    <html lang="en">
+    <script>
+      // run this function when the document is loaded
+      // create a couple of elements in an otherwise empty HTML page
+      const heading = document.createElement("h1");
+      const headingText = document.createTextNode("Big Head!");
+      heading.appendChild(headingText);
+      document.body.appendChild(heading);
+    </script>
+  </head>
+  <body>
+      <h1>My main title</h1>
+      <h2>My top level heading</h2>
+      <h3>My subheading</h3>
+      <h4>My sub-subheading</h4>
+      <img src="assets/images/dog-sample.jpg" alt="My test image" />
+      <p> Some Text </p>
+      <p>At Mozilla, we're a global community of</p>
+
+      <ul>
+        <li>technologists</li>
+        <li>thinkers</li>
+        <li>builders</li>
+      </ul>
+      <input
+        type="button"
+        value="Set paragraph background color"
+        onclick="setBackground()" />
+      <p>working together…</p>
+      <a href="https://www.mozilla.org/en-US/about/manifesto/">
+          Mozilla Manifesto
+      </a>
+      <button>Change user</button>
+      <script src="assets/scripts/main.js"></script>
+  </body>
+</html>
